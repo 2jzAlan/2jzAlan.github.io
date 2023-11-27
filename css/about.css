@@ -1,0 +1,84 @@
+
+:root {
+    --font-variable: Arial, sans-serif;
+    --font-color: #6a758c;
+}
+/* CSS for the "About Me" section */
+#About {
+    background: linear-gradient(to bottom, #2D3C56, #21293D); /* Create a vertical gradient background */
+    color: #fff; /* Change the text color to white for better readability */
+    padding: 20px; /* Add some padding to the section for spacing */
+    letter-spacing: 2px;
+}
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-variable);
+}
+
+.about-page h1,
+.about-page p,
+.about-page .skills {
+    padding: 7px; /* Adjust the padding for each element inside the "About Me" section */
+}
+
+h1 {
+    font-family: var(--font-variable);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px; /* Add margin to the bottom of the h1 to lower it */
+}
+
+p {
+    font-family: var(--font-variable);
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5; /* Add 1.5 paragraph spacing */
+    max-width: 80%; /* Reduce the width of the paragraph to 80% of its container */
+    color: #b2bbd3;
+}
+
+
+
+.skills img {
+    max-width: 100px; /* Adjust the maximum width of the skill images as needed */
+    margin: 0 20px; /* Increase the margin between skill images to create more spacing */
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills > div {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative; /* Add relative positioning */
+}
+
+.skills > div:hover {
+    transform: scale(1.1); /* Increase logo size slightly on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Apply a shadow on hover */
+}
+
+.skills > div p {
+    display: none; /* Hide the skill name by default */
+    font-weight: bold;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the skill name */
+}
+
+.skills > div:hover p {
+    display: block; /* Show the skill name on hover */
+}
+
+/* Add more styling as needed */
+
