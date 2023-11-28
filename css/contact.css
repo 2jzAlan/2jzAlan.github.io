@@ -28,12 +28,12 @@ p {
   }
 
 .email-link {
-    color: #bfff00; /* Change the color as desired */
-    text-decoration: none; /* Remove underline */
+    color: #bfff00;
+    text-decoration: none;
     text-align: center;
     font-family: var(--font-variable);
   }
   
   .email-link:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
   }

@@ -1,5 +1,3 @@
-
-
 :root {
     --font-variable: Arial, sans-serif;
     --font-color: #6a758c;
@@ -10,21 +8,20 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100; /* Use a z-index value to control the stacking order if needed */
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px; /* Add padding all around the navbar */
-    box-sizing: border-box; /* Ensure padding is included in the width calculation */
-    overflow: hidden; /* Hide content that overflows the navbar */
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
     font-family: var(--font-variable);
     background-color: #b8b8b8;
 }
 
 .logo img {
-    /* Make the logo smaller with a maximum width */
-    max-width: 50px; /* Adjust the maximum width to your desired size */
-    height: auto; /* Maintain the aspect ratio */
+    max-width: 50px;
+    height: auto;
 }
 
 .nav-links {
@@ -32,75 +29,68 @@
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 50px; /* Adjust the gap between items */
+    gap: 50px;
     letter-spacing: 2px;
-    
-    
 }
 
 .nav-links a {
-    text-decoration: none; /* Remove underlines */
+    text-decoration: none;
     color: rgb(92, 92, 92);
-    padding: 5px 10px; /* Add padding to the links (adjust as needed) */
-    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.2s ease, letter-spacing 0.2s ease; /* Add transitions for background color, color, font size, and letter spacing */
-    border-radius: 5px; /* Round the corners of links */
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.2s ease, letter-spacing 0.2s ease;
+    border-radius: 5px;
 }
 
 .nav-links a:hover {
-    color: var(--font-color); /* Change the text color on hover */
-    font-size: 1.1em; /* Increase font size on hover (adjust as needed) */
-    letter-spacing: 2px; /* Increase letter spacing on hover (adjust as needed) */
+    color: var(--font-color);
+    font-size: 1.1em;
+    letter-spacing: 2px;
 }
-
 
 .social-icons {
     display: flex;
-    gap: 0px; /* Adjust the gap between items */
-    position: relative; /* Add a relative position to the container */
+    gap: 0px;
+    position: relative;
 }
 
 .social-icons a {
-    margin-right: 10px; /* You can keep margin-right if you want additional spacing */
-    transition: transform 0.2s ease; /* Add a smooth transition for the transform property */
-    position: relative; /* Add a relative position to the icon */
-    z-index: 1; /* Ensure the icon appears above the glow */
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .social-icons a:hover {
-    transform: scale(1.1); /* Scale the icon slightly on hover (adjust the scale factor as needed) */
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Add a blurry red glow behind the icon on hover */
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 }
 
 .social-icons a:hover::before {
-    opacity: 1; /* Increase the opacity on hover to make the glow visible */
+    opacity: 1;
 }
 
 .social-icons a:hover {
-    transform: scale(1.1); /* Scale the icon slightly on hover (adjust the scale factor as needed) */
+    transform: scale(1.1);
 }
 
-
-
 .button {
-    color: #fff; /* Text color */
-    background-color: rgba(0, 0, 0, 0.65); /* Button background color with 65% opacity */
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.65);
     text-decoration: none;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 16px; /* Adjust the font size to your preference */
-    letter-spacing: 2px; /* Increase letter spacing as needed */
-    transition: all 0.3s ease; /* Add a smooth hover effect for all properties */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Add a 3D box shadow */
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker background color with 80% opacity on hover */
-    color: #eee; /* Text color on hover */
-    box-shadow: 0 0 10px rgba(96, 133, 164, 0.4), 0 0 20px rgba(96, 133, 164, 0.4); /* Add multiple box shadows to create a glowing effect */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #eee;
+    box-shadow: 0 0 10px rgba(96, 133, 164, 0.4), 0 0 20px rgba(96, 133, 164, 0.4);
 }
-
-
 
 header img {
     height: 300px;
@@ -109,30 +99,28 @@ header img {
     margin-top: 100px;
 }
 
-/* CSS for layout */
-/* CSS for layout */
 .flex-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjust if needed */
+    justify-content: space-between;
 }
 
 .profile-info {
-    flex: 1; /* This will take the left side */
-    display: flex; /* Use flexbox for its content */
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-image {
-    flex: 1; /* This will take the right side */
-    text-align: right; /* Align the image to the right within its column */
+    flex: 1;
+    text-align: right;
 }
 
 header {
-    background-image: url(minimal.jpg); /* Set the background image path */
-    background-size: cover; /* Cover the entire area with the background image */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-image: url(minimal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
