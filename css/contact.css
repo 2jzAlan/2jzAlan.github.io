@@ -1,0 +1,39 @@
+:root {
+    --font-variable: Arial, sans-serif;
+    --font-color: #6a758c;
+}
+
+#Contact{
+    background-color: black;
+    height: 150px;
+    font-family: var(--font-variable);
+}
+
+h3 {
+    color: white;
+    font-family: var(--font-variable);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: var(--font-variable);
+    font-size: 16px;
+    color: #b2bbd3;
+}
+
+.email-container {
+    display: flex;
+    justify-content: center;
+  }
+
+.email-link {
+    color: #bfff00;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--font-variable);
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }

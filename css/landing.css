@@ -1,0 +1,126 @@
+:root {
+    --font-variable: Arial, sans-serif;
+    --font-color: #6a758c;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: var(--font-variable);
+    background-color: #b8b8b8;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    letter-spacing: 2px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.2s ease, letter-spacing 0.2s ease;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: var(--font-color);
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0px;
+    position: relative;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.social-icons a:hover::before {
+    opacity: 1;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.65);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #eee;
+    box-shadow: 0 0 10px rgba(96, 133, 164, 0.4), 0 0 20px rgba(96, 133, 164, 0.4);
+}
+
+header img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-top: 100px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image {
+    flex: 1;
+    text-align: right;
+}
+
+header {
+    background-image: url(minimal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

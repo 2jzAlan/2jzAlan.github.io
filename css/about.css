@@ -1,0 +1,79 @@
+:root {
+    --font-variable: Arial, sans-serif;
+    --font-color: #6a758c;
+}
+
+#About {
+    background: linear-gradient(to bottom, #2D3C56, #21293D);
+    color: #fff;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-variable);
+}
+
+.about-page h1,
+.about-page p,
+.about-page .skills {
+    padding: 7px;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--font-variable);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about-p {
+    font-family: var(--font-variable);
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    max-width: 80%;
+    color: #b2bbd3;
+}
+
+.skills img {
+    max-width: 100px;
+    margin: 0 20px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills > div {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.skills > div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.skills > div p {
+    display: none;
+    font-weight: bold;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills > div:hover p {
+    display: block;
+}

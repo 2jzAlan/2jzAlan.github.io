@@ -1,0 +1,81 @@
+:root {
+    --font-variable: Arial, sans-serif;
+    --font-color: #6a758c;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    width: 30%;
+}
+
+body {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1000' preserveAspectRatio='none' viewBox='0 0 1440 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1018%26quot%3b)' fill='none'%3e%3crect width='1440' height='1000' x='0' y='0' fill='rgba(106%2c 117%2c 140%2c 1)'%3e%3c/rect%3e%3cpath d='M39 1000L1039 0L1651 0L651 1000z' fill='url(%26quot%3b%23SvgjsLinearGradient1019%26quot%3b)'%3e%3c/path%3e%3cpath d='M1413 1000L413 0L-964 0L36 1000z' fill='url(%26quot%3b%23SvgjsLinearGradient1020%26quot%3b)'%3e%3c/path%3e%3cpath d='M565.6540169544851 1000L1440 125.65401695448509L1440 1000z' fill='url(%26quot%3b%23SvgjsLinearGradient1019%26quot%3b)'%3e%3c/path%3e%3cpath d='M0 1000L874.3459830455149 1000L 0 125.65401695448509z' fill='url(%26quot%3b%23SvgjsLinearGradient1020%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1018'%3e%3crect width='1440' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1019'%3e%3cstop stop-color='rgba(67%2c 79%2c 103%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(67%2c 79%2c 103%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1020'%3e%3cstop stop-color='rgba(67%2c 79%2c 103%2c 0.2)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(67%2c 79%2c 103%2c 0.2)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-variable);
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons a {
+    margin: 5px;
+}
+
+.image-container {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
